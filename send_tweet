@@ -1,0 +1,36 @@
+import tweepy,secret
+
+# debes editar secret.py con tus claves api
+"""
+Puedes hacerlo siguiendo estos pasos:
+
+Inicia sesión en tu cuenta de Twitter y ve a la página de desarrolladores de Twitter (https://developer.twitter.com/).
+
+Haz clic en "Apply" (Solicitar) en la parte superior derecha de la página.
+
+Sigue las instrucciones para solicitar una clave de API. Tendrás que proporcionar información sobre tu proyecto y cómo planeas usar la API de Twitter.
+
+Una vez que hayas obtenido una clave de API, puedes usarla para publicar tweets. Hay varios tutoriales disponibles en línea que te muestran cómo hacerlo. Algunos ejemplos incluyen:
+
+https://www.twilio.com/blog/how-to-use-the-twitter-api-with-python
+https://developer.twitter.com/en/docs/twitter-api/getting-started/getting-access-to-the-twitter-api
+
+Espero que esto te ayude a empezar a usar la API para publicar tweets. ¡Suerte con tu proyecto!
+"""
+
+# Autentica tu aplicación con la API de Twitter
+auth = tweepy.OAuth1UserHandler(
+    consumer_key,
+    consumer_secret,
+    access_token,
+    access_token_secret
+)
+
+# Crea un objeto API
+api = tweepy.API(auth)
+
+def send_tweet(text)
+    # Publica un tweet
+    api.update_status(text)
+    
+# ejemplo send_tweet('Hola, estoy usando la API de Twitter gracias a @TheXXLMAN!')
