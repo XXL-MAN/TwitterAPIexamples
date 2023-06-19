@@ -11,4 +11,10 @@ cd TwitterAPIexample
 
 pip install -r requirements.txt
 
+o 
+
+pip3 install tweepy==3.10.0
+
+- NO FUNCIONA CON LA VERSIÓN 4, no es retrocompatible
+
 
